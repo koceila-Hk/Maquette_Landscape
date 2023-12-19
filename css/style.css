@@ -1,0 +1,97 @@
+:root {
+  --background-color: #F2F1F4;
+  --primary-color: #0589d8;
+  --text-color: #666666;
+}
+
+body {
+  max-width: 1400px;
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: sans-serif; 
+  }
+ 
+  header img {
+    width: 210px;
+    height: 200px;
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition:all 500ms;
+  }
+  
+    header nav {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  header nav a:hover,
+  header nav a.active {
+    background-color: beige;
+    color: black;
+  }
+ 
+     @media ( width <= 570px) {
+     nav {
+      flex-direction: column;
+    }
+  }
+  
+  h3 {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "PT Sans Narrow";
+    font-weight: normal;
+    padding: 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+ 
+  #container {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+  }
+
+  @media (width <= 570px) {
+    main {
+      flex-direction: column;
+    }
+  }
+
+  .flex {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .aside {
+    background-color: #95C8E7;
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  main > article {
+    padding: 1rem;
+  }
+
+
+ 
+ 
+
+
+
